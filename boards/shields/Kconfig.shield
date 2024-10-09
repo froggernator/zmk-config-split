@@ -1,2 +1,2 @@
-config SHIELD_split
+config SHIELD_SPLIT
   def_bool $(shield_list_contains, split)
