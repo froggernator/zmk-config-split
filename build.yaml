@@ -34,7 +34,7 @@ jobs:
     strategy:
       matrix:
         board: [nice_nano]
-        shield: [left, right]
+        shield: [left_half, right_half]
 
     steps:
       - name: Checkout code
