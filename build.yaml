@@ -17,7 +17,8 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
-name: Build Firmware
+name: Build ZMK Firmware
+
 on:
   push:
     branches:
@@ -29,12 +30,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         board: [nice_nano]
-        shield: [left_half, right_half]
+        shield: [left, right]
+
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Docker
