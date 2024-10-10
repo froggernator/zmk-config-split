@@ -34,7 +34,7 @@ jobs:
     strategy:
       matrix:
         board: [nice_nano_v2]    # Use 'nice_nano_v2' instead of 'nice_nano'
-        shield: [left_half, right_half]   # Ensure these match your shield names
+        shield: [left, right]   # Ensure these match your shield names
 
     steps:
       - name: Checkout code
